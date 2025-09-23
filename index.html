@@ -5,22 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Пример страницы HTML</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <div>
+    <header class="container">
+        <div class="header-nav">
             <nav>
                 <ul>
                     <li><a href="/page"><img src="/image.png">Текст ссылки</a></li>
                     <li><a href="/page"><img src="/image.png">Текст ссылки</a></li>
                     <li><a href="/page"><img src="/image.png">Текст ссылки</a></li>
                     <li><a href="/page"><img src="/image.png">Текст ссылки</a></li>
+                </ul>
+                <ul>
                     <li><a href="/page"><img src="/image.png">Текст ссылки</a></li>
                 </ul>
             </nav>
         </div>
-        <div>
+        <div class="header-promo">
             <img src="/logo.png" alt="">
 
             <div>
@@ -36,7 +39,7 @@
                 <span class="btn"><a href="/page-page"><img src="/image.png" alt="">Кнопка</a></span>
             </div>
         </div>
-        <div>
+        <div class="header-nav">
             <nav>
                 <ul>
                     <li><a href="/page"><img src="/image.png">Текст ссылки</a></li>
@@ -51,7 +54,7 @@
             </nav>
         </div>
     </header>
-    <main>
+    <main class="container">
         <nav>
             <ul>
                 <li><a href="">Главная</a></li>
@@ -61,7 +64,7 @@
             </ul>
         </nav>
     </main>
-    <footer>
+    <footer class="container">
         <div>
             <div>
                 <p>Личность. Творчество. Успех.</p>
