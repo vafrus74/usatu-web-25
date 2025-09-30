@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Пример страницы HTML</title>
     <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
 </head>
 
 <body>
     <header class="container">
         <div class="header-nav">
-            <nav>
+            <nav class="header-nav__main">
                 <ul>
                     <li><a href="/page"><img src="/image.png">Текст ссылки</a></li>
                     <li><a href="/page"><img src="/image.png">Текст ссылки</a></li>
@@ -35,14 +36,14 @@
             <div>
                 <span><a href="tel:88005553535"><img src="/image.png" alt="">88005553535</a></span>
                 <span><a href="mailto:info@example.com"><img src="/image.png" alt="">info@example.com</a></span>
-                <span><a href="https://vk.com"><img src="/image.png" alt="">fdsfdsfsd   </a></span>
+                <span><a href="https://vk.com"><img src="/image.png" alt="">fdsfdsfsd </a></span>
                 <span class="btn"><a href="/page-page"><img src="/image.png" alt="">Кнопка</a></span>
             </div>
         </div>
-        <div class="header-nav">
-            <nav>
+        <div class="header-nav open">
+            <nav class="header-nav__main">
                 <ul>
-                    <li><a href="/page"><img src="/image.png">Текст ссылки</a></li>
+                    <li><a class="toggleMianMenu" id="openMainMenu" href="/page"><img src="/image.png">Весь сайт</a></li>
                     <li><a href="/page"><img src="/image.png">Текст ссылки</a></li>
                     <li><a href="/page"><img src="/image.png">Текст ссылки</a></li>
                     <li><a href="/page"><img src="/image.png">Текст ссылки</a></li>
@@ -51,6 +52,63 @@
                     <li><a href="/page"><img src="/image.png">Текст ссылки</a></li>
                     <li><a href="/page"><img src="/image.png">Текст ссылки</a></li>
                 </ul>
+            </nav>
+            <nav class="header-nav__full">
+                <button class="toggleMianMenu" id="closeMainMenu">Закрыть</button>
+                <div class="nav-block-wrapper">
+                    <div class="nav-block">
+                        <div class="nav-block__item">
+                            <h3><a href="/page">Заголовок</a></h3>
+                            <ul>
+                                <li><a href="/page">Текст ссылки</a></li>
+                                <li><a href="/page">Текст ссылки</a></li>
+                                <li><a href="/page">Текст ссылки</a></li>
+                                <li><a href="/page">Текст ссылки</a></li>
+                                <li><a href="/page">Текст ссылки</a></li>
+                            </ul>
+                        </div>
+                        <div class="nav-block__item">
+                            <h3><a href="/page">Заголовок</a></h3>
+                            <ul>
+                                <li><a href="/page">Текст ссылки</a></li>
+                                <li><a href="/page">Текст ссылки</a></li>
+                                <li><a href="/page">Текст ссылки</a></li>
+                                <li><a href="/page">Текст ссылки</a></li>
+                                <li><a href="/page">Текст ссылки</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-block">
+                        <h3><a href="/page">Заголовок</a></h3>
+                        <ul>
+                            <li><a href="/page">Текст ссылки</a></li>
+                            <li><a href="/page">Текст ссылки</a></li>
+                            <li><a href="/page">Текст ссылки</a></li>
+                            <li><a href="/page">Текст ссылки</a></li>
+                            <li><a href="/page">Текст ссылки</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-block">
+                        <h3><a href="/page">Заголовок</a></h3>
+                        <ul>
+                            <li><a href="/page">Текст ссылки</a></li>
+                            <li><a href="/page">Текст ссылки</a></li>
+                            <li><a href="/page">Текст ссылки</a></li>
+                            <li><a href="/page">Текст ссылки</a></li>
+                            <li><a href="/page">Текст ссылки</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-block">
+                        <h3><a href="/page">Заголовок</a></h3>
+                        <ul>
+                            <li><a href="/page">Текст ссылки</a></li>
+                            <li><a href="/page">Текст ссылки</a></li>
+                            <li><a href="/page">Текст ссылки</a></li>
+                            <li><a href="/page">Текст ссылки</a></li>
+                            <li><a href="/page">Текст ссылки</a></li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
@@ -74,7 +132,7 @@
             <div>
                 <span><a href="tel:88005553535"><img src="/image.png" alt="">88005553535</a></span>
                 <span><a href="mailto:info@example.com"><img src="/image.png" alt="">info@example.com</a></span>
-                <span><a href="https://vk.com"><img src="/image.png" alt="">fdsfdsfsd   </a></span>
+                <span><a href="https://vk.com"><img src="/image.png" alt="">fdsfdsfsd </a></span>
             </div>
             <div>
                 <ul>
@@ -88,7 +146,7 @@
             </div>
         </div>
         <div>
-            Создание сайтов для образовательных организаций <a href="https://siteedu.ru">Сайт Еду.ру(https://siteedu.ru)</a> со всеми требованиями законодательства РФ 
+            Создание сайтов для образовательных организаций <a href="https://siteedu.ru">Сайт Еду.ру(https://siteedu.ru)</a> со всеми требованиями законодательства РФ
         </div>
     </footer>
 </body>
